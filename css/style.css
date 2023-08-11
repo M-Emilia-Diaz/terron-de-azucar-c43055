@@ -13,10 +13,10 @@ header{
     display: flex;
     flex-direction: row;
     background-color: rgba(221, 160, 221, 0.678);
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 9.375rem;
+    height: 6.25rem;
     font-size: 18px;
 }
 .navbar{
@@ -28,59 +28,126 @@ header{
 .navbar li a{
     text-decoration: none;
 }
-
 .card-conteiner{
     display: flex;
-    width: 100%;
-    height: 31.25rem;
-    flex-flow: row wrap;
+    flex-direction: row;
     justify-content: space-around;
+    width: 100%;
+    height: 37.5rem;
     align-items: center;
 }
-.inicio{
-    background-color: rgb(255, 255, 255);
-    text-align: start;
+.card-img img{
+    width: 450px;
+    height: 420px;
     align-self: flex-start;
-    width: 18.75rem;
+    background-repeat: no-repeat;
+    padding: 10px;
+}
+.inicio-home{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.875rem;
+    width: 41.25rem;
+    text-align: center;
     height: 18.75rem;
-    margin: 100;
-    order: 1;
+}
+.inicio-home h1{
+    color: #3c3040;
+    font-family: "twice";
+    font-weight: 400;
+    font-size: 3.375rem;
+    width: 35rem;
+    height: 15rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+.inicio-home p{
+    font-size: 20px;
+    text-align: center;
 }
 
-.card-img{
-    order: 2;
-    align-self: flex-end;
-    background-repeat: no-repeat;
-    border-radius: 6.25rem;
+.macs{
+    display: grid;
+    width: 100%;
+    height: 37.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 450px;
+    justify-content: space-around;
+    align-content: center;
+    grid-template-areas: "card-contein card-conteinergrid";
 }
-.card-img1{
-    order: 3;
-    align-self: flex-end;
-    justify-content: right;
-    background-repeat: no-repeat;
+.cups{
+    display: grid;
+    width: 100%;
+    height: 37.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 450px;
+    justify-content: space-around;
+    align-content: center;
+    grid-template-areas: "card-contein card-conteinergrid";
+}
+.card-contein{
+    display: flex;
+    height: 18.75rem;
+    width: 100%;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    padding: .625rem;
     
 }
-
-.card-conteinerprod{
+.inicio{
+    color: #3c3040;
+    font-family: "twice";
+    width: 35rem;
+    height: 15rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    flex-direction: column;
     display: flex;
-    width: 100%;
-    height: 31.25rem;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: center;
 }
-.card-info{
+.inicio h2{
+    font-weight: 300;
+    display: flex;
+    font-size: 1.875rem;
+    justify-content: center;
+}
+.inicio p{
+    font-weight: 200;
+    font-size: 1.25rem;
+}
+.card-conteinergrid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.card-info-cont1{
     width: 20rem;
     height: 21.875rem;
-    border: 1px solid grey;
-    background-color: rgb(161, 161, 216);
-    border-radius: 10px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
 }
-.card-imgprod img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: .625rem .625rem 0 0;
+.card-info-cont2{
+    width: 20rem;
+    height: 21.875rem;    
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+.card-info-cont3{
+    width: 20rem;
+    height: 21.875rem;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .card-info2{
     color: black;
@@ -92,18 +159,164 @@ header{
     align-items: center;
     gap: 1.25rem;
 }
+/*@media (max-width:1024px){
+    header{
+        width: 150%;
+        height: 100px;
+    }
+    main{
+        width: 150%;
+        height: 6.25rem;
+    }
+    footer{
+        width: 200%;
+        height: 100px;
+    }
+}
+@media (max-width:768px){
+    main{
+        width: 150%;
+        height: 100px;
+        
+    }
+    header{
+        width: 150%;
+        height: 100px;
+    }
+    footer{
+        width: 200%;
+        height: 100px;
+    }
+    
+}*/
+@media (max-width:768px){
+    header{
+        width: 120%;
+        height: 230px;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer{
+        width: 120%;
+        height: 100px;
+    }
+    .macs{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width:320px){
+    header{
+        width: 260%;
+        height: 450px;
+        flex-direction: column;
+        display: flex;
+    }
+    .navbar{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+    }
+    
+    footer{
+        width: 400%;
+        height: 200px;
+    }
+    .card-conteiner{
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        align-items: center;
+        width: 200%;
+        height: 60rem;
+        align-items: center;
+        
+    }
+    .macs{
+        display: flex;
+        flex-direction: column;
+        width: 200%;
+        height: 110rem;
+        align-content: space-between;
+    }
+    .card-conteinergrid{
+        flex-direction: column;
+        align-content: space-around;
+        align-items: center;
+    }
+    
+}   
+/*.
+.card-contein{
+    display: flex;
+    width: 100%;
+    height: 25rem;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-self: flex-start;
+}
+.card-conteinergrid{
+    display: grid;
+    grid-template-columns: repeat(3, 25rem);
+    gap: .3125rem;
+    grid-template-areas: "div, div, div";
+    justify-content: center;
+    align-content: flex-end;
+}
+
+.inicio h2{
+    font-size: 2.25rem;
+}
+
+.card-img1{
+    order: 3;
+    align-self: flex-end;
+    justify-content: right;
+    background-repeat: no-repeat;
+    
+    
+}
+
+.card-conteinerprod{
+    display: flex;
+    width: 100%;
+    height: 31.25rem;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card-imgprod img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: .625rem .625rem 0 0;
+}
+
+.card-info2 button{
+    font-family: Twice;
+    font-weight: 100px;
+    border-radius: .3125rem;
+}*/
 
 
 
 footer{
+    width: 100%;
+    height: 14.375rem;
     display: flex;
     background-color: rgba(221, 160, 221, 0.678);
     justify-content: center;
     gap: 1.25rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 .card-footer{
     margin: 3.75rem;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
-
+    gap: 20px;
 }
