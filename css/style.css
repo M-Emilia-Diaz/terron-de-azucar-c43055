@@ -1,23 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Playfair+Display&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-@font-face{
-    font-family: Twice;
-    src: url(../assets/tipografias/Twice\ Writing\ Serif.ttf);
-}
 
+/*header*/
 header{
     display: flex;
     flex-direction: row;
     background-color: rgba(221, 160, 221, 0.678);
-    justify-content: space-around;
+    opacity: 95%;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 6.25rem;
+    font-family: 'Playfair Display', serif;
     font-size: 18px;
+}
+header div a{
+    padding-left: 1.25rem;
 }
 .navbar{
     display: flex;
@@ -28,295 +33,553 @@ header{
 .navbar li a{
     text-decoration: none;
 }
-.card-conteiner{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+
+
+/*main home*/
+.main-home{
+    width: 100%;
+    height: 780px;
+}
+.grid-conteiner{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
+    justify-items: center;
     width: 100%;
     height: 37.5rem;
+}
+.grid-conteiner h1{
+    display: grid;
+    justify-items: center;
+    align-items: end;
+    width: 100%;
+    height: 6.25rem;
+    padding: .625rem;
+    grid-column: 1 / 5;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 44px;
+}
+.text-home{
+    display: grid;
+    justify-items: center;
+    grid-column: 1 / 3;
+    grid-row: 2/ 3;
     align-items: center;
-}
-.card-img img{
-    width: 450px;
-    height: 420px;
-    align-self: flex-start;
-    background-repeat: no-repeat;
-    padding: 10px;
-}
-.inicio-home{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 1.875rem;
-    width: 41.25rem;
-    text-align: center;
-    height: 18.75rem;
-}
-.inicio-home h1{
-    color: #3c3040;
-    font-family: "twice";
-    font-weight: 400;
-    font-size: 3.375rem;
-    width: 35rem;
-    height: 15rem;
-    margin-top: 1.5rem;
-    margin-bottom: 2rem;
-}
-.inicio-home p{
+    width: 100%;
+    height: 12.5rem;
+    padding: 1.25rem;
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     text-align: center;
 }
+.img-home{
+    grid-row: 2 / 3;
+    grid-column: 3 / 5;
+}
+.img-home img{
+    width: 400px;
+    height: 400px;
+}
 
-.macs{
+/*main macs & cups*/
+.macs-cups{
+    width: 100%;
+    height: 75rem;
+}
+.card-contein-macs{
     display: grid;
     width: 100%;
-    height: 37.5rem;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 450px;
-    justify-content: space-around;
-    align-content: center;
-    grid-template-areas: "card-contein card-conteinergrid";
+    height: 25rem;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    padding-bottom: 20px;
+    background-image: url(../assets/img/macarons1r.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
-.cups{
+.card-contein-cups{
     display: grid;
     width: 100%;
-    height: 37.5rem;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 450px;
-    justify-content: space-around;
-    align-content: center;
-    grid-template-areas: "card-contein card-conteinergrid";
-}
-.card-contein{
-    display: flex;
-    height: 18.75rem;
-    width: 100%;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    padding: .625rem;
-    
+    height: 25rem;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    padding-bottom: 20px;
+    background-image: url(../assets/img/cupcakes3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
 }
 .inicio{
-    color: #3c3040;
-    font-family: "twice";
-    width: 35rem;
-    height: 15rem;
-    margin-top: 1.5rem;
-    margin-bottom: 2rem;
+    display: grid;
     flex-direction: column;
-    display: flex;
-    justify-content: center;
+    grid-column: 2 / 7;
+    align-items: center;
+    justify-items: center;
 }
 .inicio h2{
+    font-size: 44px;
+    color: #fff;
+}
+.inicio h3{
+    font-size: 26px;
+    color: #fff;
     font-weight: 300;
-    display: flex;
-    font-size: 1.875rem;
-    justify-content: center;
 }
 .inicio p{
-    font-weight: 200;
-    font-size: 1.25rem;
+    font-size: 22px;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(75, 41, 47, 0.589);
+    border: .0625rem;
+    border-radius: 10px;
 }
-.card-conteinergrid{
+.text-secundario{
+    font-size: 22px;
+    text-align: center;
+    grid-column: 2 / 7;
+    grid-row: 5 / 6;
+    color: #fff;
+}
+
+/*cards macs & cups*/
+.conteiner{
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-top: 160px;
 }
-.card-info-cont1{
-    width: 20rem;
-    height: 21.875rem;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    display: flex;
-}
-.card-info-cont2{
-    width: 20rem;
-    height: 21.875rem;    
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    display: flex;
-}
-.card-info-cont3{
-    width: 20rem;
-    height: 21.875rem;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.card-info2{
-    color: black;
-    display: flex;
+.card{
     width: 100%;
-    height: 6.875rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1.25rem;
+    max-width: 330px;
+    margin: 1.25rem;
+    border-radius: 4.375rem;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
 }
-/*@media (max-width:1024px){
-    header{
-        width: 150%;
-        height: 100px;
-    }
-    main{
-        width: 150%;
-        height: 6.25rem;
-    }
-    footer{
-        width: 200%;
-        height: 100px;
-    }
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
 }
-@media (max-width:768px){
-    main{
-        width: 150%;
-        height: 100px;
-        
-    }
-    header{
-        width: 150%;
-        height: 100px;
-    }
-    footer{
-        width: 200%;
-        height: 100px;
-    }
+.card img{
+    width: 100%;
     
-}*/
-@media (max-width:768px){
-    header{
-        width: 120%;
-        height: 230px;
+}
+.contenido{
+    padding: 15px;
+    text-align: center;
+}
+.contenido h3{
+    margin-bottom: .9375rem;
+}
+.contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: .625rem;
+    margin-top: .625rem;
+    color: #e9a9de;
+    border: 1px solid #e9a9de;
+    border-radius: .25rem;
+    transition: all 400ms ease;
+}
+.contenido a:hover{
+    background: #e9a9de;
+    color: #fff;
+}
+
+/*contacto*/
+
+.color-boton{
+    color: #ffff;
+    background-color: #e8bfe8;
+}
+.navbar-con{
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    list-style-type: none;
+    gap: 1.25rem;
+    padding-right: 1.25rem;
+    padding-top: 1rem;
+    font-size: 18px;
+}
+.navbar-con li a{
+    text-decoration: none;
+    color: #5e2691;
+}
+.ubicacion{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    width: 100%;
+    height: 31.25rem;
+}
+.ubicacion h2{
+    grid-column: 3 / 5;
+    font-family: 'Playfair Display', serif;
+    font-size: 44px;
+    text-align: center;
+    padding-top: 30px;
+}
+.ubicacion div{
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 1.875rem;
+}
+.ubicacion div h3{
+    font-size: 30px;
+}
+.ubicacion iframe{
+    width: 200%;
+    height: 18.75rem;
+    grid-column: 4 / 5;
+    grid-row: 3 / 5;
+}
+/*conocenos*/
+.conocenos{
+    width: 100%;
+    height:500px;
+}
+.mi-carrousel{
+    width: 50%;
+    padding: 2.5rem;
+}
+.texto-conocenos{
+    text-align: center;
+    padding: 1.875rem;
+    
+}
+/*main conocenos*/
+.main-about{
+    width: 100%;
+    height: 700px;
+}
+
+/*footer*/
+.footer-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 9.375rem;
+    background-color:  rgba(221, 160, 221, 0.678);
+    list-style: none;
+}
+
+/*mediaqueries*/
+
+@media (max-width: 1024px){
+    .conocenos{
+        width: 100%;
+        height: 900px;
+    }
+}
+@media (max-width: 768px){
+    .grid-conteiner h1{
+        grid-column: 1 / 5;
+        font-size: 34px;
+        width: 100%;
+    }
+    .text-home{
+        grid-column: 1 / 6;
+        grid-row: 2 / 3;
+        align-items: start;
+    }
+    .img-home{
+        width: 100%;
+        grid-column: 2 / 6;
+        grid-row: 3 / 6;
+    }
+    .main-home{
+        width: 100%;
+        height: 48.75rem;
+    }
+    .macs-cups{
+        width: 100%;
+        height: 1100px;
+    }
+    .card-contein-cups{
+        background-image: none;
+    }
+    .card-contein-macs{
+        background-image: none;
+    }
+    .inicio{
+        width: 100%;
+        height: 450px;
+    }
+    .inicio h2{
+        color: black;
+    }
+    .inicio h3{
+        color: black;
+    }
+    .inicio p{
+        background-color: #ffffff00;
+        color: black;
+    }
+    .text-secundario{
+        color: black;
+        padding-top: 30px;
+    }
+    .conocenos{
+        display: flex;
         flex-direction: column;
-        align-items: center;
+        width: 100%;
+        height: 56.25rem;
     }
-    footer{
-        width: 120%;
-        height: 100px;
+    .texto-conocenos{
+        width: 100%;
     }
-    .macs{
+    .mi-carrousel{
+        width: 100%;
+    }
+    .ubicacion{
         display: flex;
         flex-direction: column;
     }
 }
-@media (max-width:320px){
+@media (max-width: 700px){
     header{
-        width: 260%;
-        height: 450px;
         flex-direction: column;
-        display: flex;
+        height: 300px;
+        width: 100%;
     }
     .navbar{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        font-size: 24px;
+        position: relative;
+        top: -3.125rem;
+        padding-left: 1.875rem;
+        gap: 5px;
     }
-    
-    footer{
-        width: 400%;
-        height: 200px;
-    }
-    .card-conteiner{
+    .grid-conteiner{
         display: flex;
         flex-direction: column;
-        align-content: space-between;
-        align-items: center;
-        width: 200%;
-        height: 60rem;
-        align-items: center;
-        
+        gap: 1.875rem;
+        padding-top: .625rem;
     }
-    .macs{
+    .grid-conteiner h1{
+        text-align: center;
+        font-size: 30px;
+    }
+    .img-home{
+        display: flex;
+        justify-content: center;
+        padding-top: 1.25rem;
+    }
+    .img-home img{
+        width: 85%;
+        height: 100%;
+    }
+    .main-home{
+        width: 100%;
+        height: 56.25rem;
+    }
+    .ubicacion{
         display: flex;
         flex-direction: column;
-        width: 200%;
-        height: 110rem;
-        align-content: space-between;
     }
-    .card-conteinergrid{
+}
+@media (max-width: 600px){
+    .macs-cups{
+        width: 100%;
+        height: 156.25rem;
+    }
+    .conteiner{
+        display: flex;
         flex-direction: column;
-        align-content: space-around;
+        align-items: center;  
+    }
+    .navbar-con{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
+        position: relative;
+        top: -3.125rem;
+        padding-left: 1.875rem;
+        padding-top: .375rem;
+        gap: 3px;
+    }
+    .conocenos{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 56.25rem;
+    }
+    .texto-conocenos{
+        width: 100%;
+    }
+    .mi-carrousel{
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 425px){
+    header{
+        flex-direction: column;
+        width: 100%;
+        height: 18.75rem;
+    }
+    header div{
+        position: relative;
+        top: -1.25rem;
+    }
+    .navbar{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: -3.125rem;
+        padding-left: 1.875rem;
+        gap: 5px;
+    }
+    .main-home{
+        width: 100%;
+        height: 56.25rem;
+    }
+    .grid-conteiner{
+        display: flex;
+        flex-direction: column;
+        gap: 1.875rem;
+        padding-top: .625rem;
+    }
+    .grid-conteiner h1{
+        text-align: center;
+        font-size: 30px;
+    }
+    .img-home{
+        display: flex;
+        justify-content: center;
+        padding-top: 1.25rem;
+    }
+    .img-home img{
+        width: 85%;
+        height: 100%;
+    }
+    .macs-cups{
+        width: 100%;
+        height: 180rem;
+    }
+    .conteiner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40.625rem;
+    }
+    .card-contein-cups{
+        background-image: none;
+    }
+    .card-contein-macs{
+        background-image: none;
+    }
+    .inicio{
+        width: 100%;
+        height: 900px;
+    }
+    .inicio h2{
+        color: black;
+    }
+    .inicio h3{
+        color: black;
+    }
+    .inicio p{
+        background-color: #ffffff00;
+        color: black;
+    }
+    .text-secundario{
+        color: black;
+        padding-top: 30px;
+    }
+    .ubicacion{
+        display: flex;
+        flex-direction: column;
+    }
     }
     
-}   
-/*.
-.card-contein{
-    display: flex;
-    width: 100%;
-    height: 25rem;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    align-self: flex-start;
-}
-.card-conteinergrid{
-    display: grid;
-    grid-template-columns: repeat(3, 25rem);
-    gap: .3125rem;
-    grid-template-areas: "div, div, div";
-    justify-content: center;
-    align-content: flex-end;
-}
 
-.inicio h2{
-    font-size: 2.25rem;
-}
-
-.card-img1{
-    order: 3;
-    align-self: flex-end;
-    justify-content: right;
-    background-repeat: no-repeat;
-    
-    
-}
-
-.card-conteinerprod{
-    display: flex;
-    width: 100%;
-    height: 31.25rem;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.card-imgprod img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: .625rem .625rem 0 0;
-}
-
-.card-info2 button{
-    font-family: Twice;
-    font-weight: 100px;
-    border-radius: .3125rem;
-}*/
-
-
-
-footer{
-    width: 100%;
-    height: 14.375rem;
-    display: flex;
-    background-color: rgba(221, 160, 221, 0.678);
-    justify-content: center;
-    gap: 1.25rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.card-footer{
-    margin: 3.75rem;
-    padding: 10px;
-    text-align: center;
-    gap: 20px;
+@media (max-width: 320px){
+    .main-home{
+        height: 46.875rem;
+    }
+    .text-home{
+        height: 280px;
+    }
+    .macs-cups{
+        width: 100%;
+        height: 2500px;
+    }
+    .conteiner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40.625rem;
+    }
+    .card{
+        width: 70%;
+    }
+    .card-contein-macs{
+        background-image: none;
+    }
+    .card-contein-cups{
+        background-image: none;
+    }
+    .inicio{
+        gap: 1.875rem;
+        width: 100%;
+        height: 900px;
+    }
+    .inicio h2{
+        color: black;
+    }
+    .inicio h3{
+        color: black;
+    }
+    .inicio p{
+        background-color: #ffffff00;
+        color: black;
+    }
+    .text-secundario{
+        color: black;
+        padding-top: 30px;
+    }
+    .navbar-con{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: -3.125rem;
+        padding-left: 1.875rem;
+        padding-top: .375rem;
+        gap: 3px;
+    }
+    .conocenos{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 56.25rem;
+    }
+    .texto-conocenos{
+        width: 100%;
+    }
+    .mi-carrousel{
+        width: 100%;
+    }
+    .ubicacion{
+        display: flex;
+        flex-direction: column;
+    }
 }
