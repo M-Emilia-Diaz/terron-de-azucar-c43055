@@ -1,0 +1,67 @@
+@media (max-width: 768px){
+    .main-home{
+        width: 100%;
+        height: 48.75rem;
+        section{
+            h1{
+                grid-column: 1 / 5;
+                font-size: 34px;
+                width: 100%;
+            }
+        }
+    }
+    .text-home{
+        grid-column: 1 / 6;
+        grid-row: 2 / 3;
+        align-items: start;
+    }
+    .img-home{
+        width: 100%;
+        grid-column: 2 / 6;
+        grid-row: 3 / 6;
+    }
+    .macs-cups{
+        width: 100%;
+        height: 1100px;
+    }
+    .card-contein-cups{
+        background-image: none;
+    }
+    .card-contein-macs{
+        background-image: none;
+    }
+    .inicio{
+        width: 100%;
+        height: 450px;
+        h2{
+            color: black;
+        }
+        h3{
+            color: black;
+        }
+        p{
+            background-color: #ffffff00;
+        color: black;
+        }
+    }
+    .text-secundario{
+        color: black;
+        padding-top: 30px;
+    }
+    .conocenos{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 56.25rem;
+    }
+    .texto-conocenos{
+        width: 100%;
+    }
+    .mi-carrousel{
+        width: 100%;
+    }
+    .ubicacion{
+        display: flex;
+        flex-direction: column;
+    }
+}

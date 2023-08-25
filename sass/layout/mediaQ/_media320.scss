@@ -1,0 +1,75 @@
+@media (max-width: 320px){
+    .main-home{
+        height: 1000px;
+    }
+    .text-home{
+        height: 380px;
+    }
+    
+    .macs-cups{
+        width: 100%;
+        height: 2500px;
+    }
+    .conteiner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40.625rem;
+    }
+    .card{
+        width: 70%;
+    }
+    .card-contein-macs{
+        background-image: none;
+    }
+    .card-contein-cups{
+        background-image: none;
+    }
+    .inicio{
+        gap: 1.875rem;
+        width: 100%;
+        height: 900px;
+        h2{
+            color: black;
+        }
+        h3{
+            color: black;
+        }
+        p{
+            background-color: #ffffff00;
+            color: black;
+        }
+    }
+    .text-secundario{
+        color: black;
+        padding-top: 30px;
+    }
+    .navbar-con{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: -3.125rem;
+        padding-left: 1.875rem;
+        padding-top: .375rem;
+        gap: 3px;
+    }
+    .conocenos{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 56.25rem;
+    }
+    .texto-conocenos{
+        width: 100%;
+    }
+    .mi-carrousel{
+        width: 100%;
+    }
+    .ubicacion{
+        display: flex;
+        flex-direction: column;
+    }
+}
