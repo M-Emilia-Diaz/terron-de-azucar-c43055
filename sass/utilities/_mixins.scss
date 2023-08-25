@@ -1,0 +1,14 @@
+@mixin grid($col, $row, $backgrRepeat, $backgrSize, $backgrPosition){
+    display: grid;
+    grid-template-columns: $col;
+    grid-template-rows: $row;
+    background-repeat: $backgrRepeat;
+    background-size: $backgrSize;
+    background-position: $backgrPosition;
+}
+@mixin flex($direction, $justify, $align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
