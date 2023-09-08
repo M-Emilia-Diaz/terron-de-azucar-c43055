@@ -1,14 +1,52 @@
 @media (max-width: 320px){
     .main-home{
-        height: 1000px;
+        width: 100%;
+        height: 125rem;
+        
+    }
+    .grid-conteiner{
+        width: 100%;
+        height: 68.75rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        padding: 1.25rem;
+        h1{
+            height: 18.75rem;
+            text-align: center;
+        }
+        
     }
     .text-home{
-        height: 380px;
+        width: 100%;
+        height: 40.625rem;
+        p{
+            height: 37.5rem;
+        }
     }
-    
+    .img-home{
+        img{
+            max-width: 100%;
+        }
+        
+    }
+    .home-secundary{
+        width: 100%;
+        height: 43.75rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding-top: .9375rem;
+        img{
+            max-width: 100%;
+        }
+        
+    }
     .macs-cups{
         width: 100%;
-        height: 2500px;
+        height: 156.25rem;
     }
     .conteiner{
         display: flex;
@@ -19,6 +57,17 @@
     .card{
         width: 70%;
     }
+    @keyframes show{
+        from {
+            opacity: 0;
+            scale: 25%;
+        }
+    } 
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+
     .card-contein-macs{
         background-image: none;
     }
@@ -60,7 +109,7 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 56.25rem;
+        height: 150rem;
     }
     .texto-conocenos{
         width: 100%;
@@ -68,8 +117,18 @@
     .mi-carrousel{
         width: 100%;
     }
+    .text-aboutus{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 1450px;
+    }
     .ubicacion{
         display: flex;
         flex-direction: column;
     }
+    .my-form{
+        width: 100%;
+    }
+    
 }
