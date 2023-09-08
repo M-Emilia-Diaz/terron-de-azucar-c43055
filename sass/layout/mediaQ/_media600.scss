@@ -24,12 +24,62 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 56.25rem;
+        height: 2000px;
     }
     .texto-conocenos{
         width: 100%;
     }
     .mi-carrousel{
         width: 100%;
+    }
+    .text-aboutus{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 1250px;
+    }
+    .my-form{
+        width: 90%;
+    }
+    .main-home{
+        height: 1650px;
+    }
+    .grid-conteiner{
+        width: 100%;
+        height: 56.25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1.25rem;
+        h1{
+            height: 18.75rem;
+            text-align: center;
+        }
+    }
+    .text-home{
+        width: 100%;
+        height: 400px;
+        p{
+            height: 350px;
+        }
+    }
+    .img-home{
+        img{
+            max-width: 100%;
+        }
+        
+    }
+    .home-secundary{
+        width: 100%;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding-top: .9375rem;
+        img{
+            max-width: 110%;
+        }
+        
     }
 }

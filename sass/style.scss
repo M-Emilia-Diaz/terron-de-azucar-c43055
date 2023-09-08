@@ -12,12 +12,18 @@
 @import "./layout/main-macs&cups";
 @import "./layout/main-contact&about";
 @import "./layout/main-index";
+@import "./layout/main-error404";
 @import "./layout/footer";
 
 /*todo lo correspondiente a los media quieries*/
 
+@import "./layout/mediaQ/media2560";
+@import "./layout/mediaQ/_media1440";
 @import "./layout/mediaQ/media1024";
+@import "./layout/mediaQ/media1100";
+@import "./layout/mediaQ/media1000";
 @import "./layout/mediaQ/media768";
+@import "./layout/mediaQ/media732";
 @import "./layout/mediaQ/media700";
 @import "./layout/mediaQ/media600";
 @import "./layout/mediaQ/media425";

@@ -1,0 +1,47 @@
+@media (max-width: 1000px){
+.conocenos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 1550px;
+}
+.mi-carrousel{
+    width: 100%;
+}
+.texto-conocenos{
+    width: 100%;
+}
+.text-aboutus{
+    width: 100%;
+    height: 43.75rem;
+    padding: 1.25rem;
+    align-items: start;
+    div{
+        height: 36.25rem;
+    }
+}
+.my-form{
+    width: 90%;
+}
+.grid-conteiner{
+    width: 100%;
+    height: 56.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.25rem;
+    h1{
+        height: 18.75rem;
+        text-align: center;
+    }
+}
+.img-home{
+    align-self: center;
+    img{
+        max-width: 100%;
+    }
+}
+.home-secundary{
+    padding-top: 1.875rem;
+}
+}
